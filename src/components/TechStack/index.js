@@ -1,5 +1,9 @@
 import React from "react";
 import "./index.css";
+import { LangTools } from "./Stacks/LangTools.js";
+import { TechTools } from "./Stacks/TechTools.js";
+import { FrameworkTools } from "./Stacks/FrameworkTools.js";
+import { DatabaseTools } from "./Stacks/DatabaseTools.js";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "react-bootstrap/Container";
@@ -15,6 +19,7 @@ const techHeaderStyle = {
 const descriptionStyle = {
   fontSize: "14px",
   color: "#969696",
+  marginBottom: "3vh",
 };
 
 const TitleDesc = ({ description }) => {
@@ -50,7 +55,6 @@ const TechStack = () => {
         <Grid container spacing={2}>
           <Grid item>
             <Box
-              height={200}
               width={600}
               my={4}
               gap={4}
@@ -58,13 +62,17 @@ const TechStack = () => {
               borderRadius={2}
               sx={{ border: "2px solid #969696" }}
             >
-              <TechHeader title="Languages & Frameworks" />
+              <TechHeader title="Languages" />
               <TitleDesc description="Experienced tools" />
+              <LangTools />
+              <br></br><br></br>
+              <TechHeader title="Frameworks" />
+              <TitleDesc description="Experienced tools" />
+              <FrameworkTools />
             </Box>
           </Grid>
           <Grid item>
             <Box
-              height={200}
               width={600}
               my={4}
               gap={4}
@@ -74,6 +82,11 @@ const TechStack = () => {
             >
               <TechHeader title="Technologies" />
               <TitleDesc description="Experienced tools" />
+              <TechTools />
+              <br></br><br></br>
+              <TechHeader title="Databases" />
+              <TitleDesc description="Experienced tools" />
+              <DatabaseTools />
             </Box>
           </Grid>
         </Grid>

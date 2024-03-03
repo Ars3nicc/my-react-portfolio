@@ -37,54 +37,50 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <Container fluid>
+    <Container>
       <main>
-        <div className="aboutme-container">
-          <div className="about-me">
-            <header className="about-me-hello">Hello! I'm</header>
-            <h1>
-              <span className="input aboutme-name"></span>
-            </h1>
-            <header className="aboutme-desc">
-              I am a proficient software developer with extensive expertise in
-              fundamental to advanced programming concepts. My skill set allows
-              me to excel in both technical and non-technical roles within the
-              profession.
-            </header>
-            <div style={iconGroupStyle} className="icon-grp">
-              <a
-                href="https://github.com/Ars3nicc"
-                className="aboutme-icon"
-                data-label="GitHub"
-              >
-                <GitHubIcon style={iconStyle} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
-                className="aboutme-icon"
-                data-label="LinkedIn"
-              >
-                <LinkedInIcon style={iconStyle} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
-                className="aboutme-icon"
-                data-label="Resume"
-              >
-                <DescriptionIcon style={iconStyle} />
-              </a>
-            </div>
-          </div>
-          <div className="about-me-img">
-            <img
-              src={fubukiImage}
-              alt="My Profile"
-              className="my-profile-img"
-            />
+      <div className="aboutme-container">
+        <div className="about-me">
+          <header className="about-me-hello">Hello! I'm</header>
+          <h1>
+            <span className="input aboutme-name"></span>
+          </h1>
+          <header className="aboutme-desc">
+            I am a proficient software developer with extensive expertise in
+            fundamental to advanced programming concepts. My skill set allows me
+            to excel in both technical and non-technical roles within the
+            profession.
+          </header>
+          <div style={iconGroupStyle} className="icon-grp">
+            <a
+              href="https://github.com/Ars3nicc"
+              className="aboutme-icon"
+              data-label="GitHub"
+            >
+              <GitHubIcon style={iconStyle} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
+              className="aboutme-icon"
+              data-label="LinkedIn"
+            >
+              <LinkedInIcon style={iconStyle} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
+              className="aboutme-icon"
+              data-label="Resume"
+            >
+              <DescriptionIcon style={iconStyle} />
+            </a>
           </div>
         </div>
-        <TechStack />
-      </main>
+        <div className="about-me-img">
+          <img src={fubukiImage} alt="My Profile" className="my-profile-img" />
+        </div>
+      </div>
+      <TechStack/>
+    </main>
     </Container>
   );
 };

@@ -3,27 +3,33 @@
   align-items: center;
   padding: 10vh;
 }
+
 .about-me {
   width: 60%;
   font-family: "Lato";
 }
+
 .about-me-hello {
   font-size: 1.9rem;
   font-weight: 500;
 }
+
 .aboutme-name {
   font-size: 4rem;
   font-weight: 900;
   color: #387adf;
 }
+
 .aboutme-desc {
   font-size: 1.2rem;
   line-height: 4vh;
   width: 80%;
 }
+
 .about-me-img {
   margin-left: 10vh;
 }
+
 .my-profile-img {
   width: 300px;
   height: auto;
@@ -35,10 +41,13 @@
   position: relative;
   display: inline-block;
 }
+
 .aboutme-icon:hover::after {
-  content: attr(data-label); /* Display the value of data-label attribute */
+  content: attr(data-label);
+  /* Display the value of data-label attribute */
   position: absolute;
-  bottom: -30px; /* Adjust as needed */
+  bottom: -30px;
+  /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8);
@@ -47,4 +56,38 @@
   border-radius: 5px;
   font-size: 14px;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5vh;
+  }
+
+  .about-me {
+    width: 100%;
+  }
+
+  .aboutme-desc {
+    width: 100%;
+
+  }
+  .aboutme-name {
+    font-size: 3rem;
+  }
+  .about-me-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutme-icon {
+    margin: 7px 0;
+  }
+
+  .aboutme-icon:hover::after {
+    bottom: 80%;
+    left: 0;
+    transform: translate(0, -10px);
+  }
 }
