@@ -1,0 +1,46 @@
+.navbar {
+    width: 100%;
+    color: #3b3b3b;
+    transition: .1s ease;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-left: 1.5vw;
+    font-weight: bold;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 2vw;
+}
+
+.links ul li {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .links ul li{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+.aboutme-container{
+    display: flex;
+    align-items: center;
+    padding: 4vh;
+
+}
+.about-me{
+    width: 45%;
+    font-family: 'Lato';
+}
+.about-me-hello{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.aboutme-name{
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+.about-me-img{
+    margin-left: 10vh;
+}
+.my-profile-img{
+    width: 300px;
+    height: auto;
+}
