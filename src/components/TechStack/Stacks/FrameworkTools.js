@@ -26,14 +26,13 @@ export const FrameworkTools = () => {
       borderRadius: "4px", // Rounded corners
       fontSize: "12px", // Font size
       display: "none", // Initially hide the label
-      width: "50px", 
       textAlign: "center"
     };
   
     const handleMouseEnter = (event) => {
       const label = event.target.nextSibling; // Get the next sibling element (label)
       if (label) {
-        label.style.display = "block";
+        label.style.display = "inline-block";
       }
     };
   

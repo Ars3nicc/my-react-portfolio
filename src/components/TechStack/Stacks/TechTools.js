@@ -9,6 +9,11 @@ import nodeIcon from "../../../assets/img/tech-stack/technology/node.png";
 import composerIcon from "../../../assets/img/tech-stack/technology/composer.png";
 import xamppIcon from "../../../assets/img/tech-stack/technology/xampp.png";
 import jsonIcon from "../../../assets/img/tech-stack/technology/json.png";
+import figmaIcon from "../../../assets/img/tech-stack/technology/figma.png";
+import vscodeIcon from "../../../assets/img/tech-stack/technology/vscode.png";
+import trelloIcon from "../../../assets/img/tech-stack/technology/trello.png";
+import postmanIcon from "../../../assets/img/tech-stack/technology/postman.jpg";
+
 
 export const TechTools = () => {
     const iconStyle = {
@@ -31,7 +36,6 @@ export const TechTools = () => {
         borderRadius: "4px", // Rounded corners
         fontSize: "12px", // Font size
         display: "none", // Initially hide the label
-        width: "60px", // Adjust width as needed
         textAlign: "center",
         overflow: "hidden", // Hide overflow text
         textOverflow: "ellipsis", // Display ellipsis for overflow text
@@ -40,7 +44,7 @@ export const TechTools = () => {
     const handleMouseEnter = (event) => {
       const label = event.target.nextSibling; // Get the next sibling element (label)
       if (label) {
-        label.style.display = "block";
+        label.style.display = "inline-block";
       }
     };
   
@@ -80,7 +84,10 @@ export const TechTools = () => {
         jsonIcon,
         composerIcon,
         xamppIcon,
-
+        figmaIcon,
+        vscodeIcon,
+        postmanIcon,
+        trelloIcon,
 
 
     ];
@@ -95,6 +102,10 @@ export const TechTools = () => {
       "JSON",
       "Composer",
       "XAMPP",
+      "Figma",
+      "VS Code",
+      "Postman",
+      "Trello",
     ];
   
     return (

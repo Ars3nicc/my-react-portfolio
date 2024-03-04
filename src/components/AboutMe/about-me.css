@@ -31,8 +31,10 @@
 }
 
 .my-profile-img {
-  width: 300px;
+  width: 400px;
   height: auto;
+  box-shadow: 20px 20px #f0841e;
+  border-radius: 999px; 
 }
 
 .aboutme-icon {

@@ -21,7 +21,10 @@ const descriptionStyle = {
   color: "#969696",
   marginBottom: "3vh",
 };
-
+const gridStyle = {
+  display: "flex",
+  justifyContent: "center",
+}
 const TitleDesc = ({ description }) => {
   return (
     <main>
@@ -52,9 +55,10 @@ const TechStack = () => {
       <Container fluid>
         <TitleHeader title="Tech Stack" />
 
-        <Grid container spacing={2}>
+        <Grid container spacing={5} style={gridStyle}>
           <Grid item>
             <Box
+              height={400}
               width={600}
               my={4}
               gap={4}
@@ -65,7 +69,8 @@ const TechStack = () => {
               <TechHeader title="Languages" />
               <TitleDesc description="Experienced tools" />
               <LangTools />
-              <br></br><br></br>
+              <br></br>
+              <br></br>
               <TechHeader title="Frameworks" />
               <TitleDesc description="Experienced tools" />
               <FrameworkTools />
@@ -73,6 +78,7 @@ const TechStack = () => {
           </Grid>
           <Grid item>
             <Box
+            height={400}
               width={600}
               my={4}
               gap={4}
@@ -83,7 +89,8 @@ const TechStack = () => {
               <TechHeader title="Technologies" />
               <TitleDesc description="Experienced tools" />
               <TechTools />
-              <br></br><br></br>
+              <br></br>
+              <br></br>
               <TechHeader title="Databases" />
               <TitleDesc description="Experienced tools" />
               <DatabaseTools />
