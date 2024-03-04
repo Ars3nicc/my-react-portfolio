@@ -34,7 +34,7 @@
   width: 400px;
   height: auto;
   box-shadow: 20px 20px #f0841e;
-  border-radius: 999px; 
+  border-radius: 999px;
 }
 
 .aboutme-icon {
@@ -62,27 +62,33 @@
 
 @media screen and (max-width: 768px) {
   .aboutme-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     padding: 5vh;
   }
-
+  .about-me-hello {
+    font-size: 1.5rem;
+  }
   .about-me {
     width: 100%;
   }
 
   .aboutme-desc {
     width: 100%;
-
+    text-align: justify;
   }
   .aboutme-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .about-me-img {
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
   }
-
+  .my-profile-img {
+    width: 200px;
+    height: auto;
+  }
   .aboutme-icon {
     margin: 7px 0;
   }

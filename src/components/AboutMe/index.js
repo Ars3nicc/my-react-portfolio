@@ -2,21 +2,21 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "./about-me.css";
 import avatarImage from "../../assets/img/my-avatar.png";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import DescriptionIcon from "@mui/icons-material/Description";
 import Container from "react-bootstrap/Container";
-import Resume from "../Resume/index";
+import ResumeContainer from "../Resume/resumeData"; 
 
 export const AboutMe = () => {
-  const iconStyle = {
-    fontSize: "3rem",
-  };
+  // const iconStyle = {
+  //   fontSize: "3rem",
+  // };
 
-  const iconGroupStyle = {
-    marginTop: "3vh",
-    display: "flex",
-  };
+  // const iconGroupStyle = {
+  //   marginTop: "3vh",
+  //   display: "flex",
+  // };
 
   useEffect(() => {
     const typed = new Typed(".input", {
@@ -51,7 +51,7 @@ export const AboutMe = () => {
               me to excel in both technical and non-technical roles within the
               profession.
             </header>
-            <div style={iconGroupStyle} className="icon-grp">
+            {/* <div style={iconGroupStyle} className="icon-grp">
               <a
                 href="https://github.com/Ars3nicc"
                 className="aboutme-icon"
@@ -73,7 +73,7 @@ export const AboutMe = () => {
               >
                 <DescriptionIcon style={iconStyle} />
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="about-me-img">
             <img
@@ -83,7 +83,8 @@ export const AboutMe = () => {
             />
           </div>
         </div>
-        <Resume/>
+        <ResumeContainer
+        />
       </>
     </Container>
   );
