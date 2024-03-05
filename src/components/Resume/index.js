@@ -51,7 +51,7 @@ const PositionTitle = ({ title, company, experience, stacks }) => {
       <header style={positionStyle}>{title}</header>
       <div style={companyStyle}>{company}</div>
       <header style={headerStyle}>Tech Stacks Used:</header>
-       <img style={stacksStyle} src={stacks} alt="Tech Stack Icon" />
+      <img style={stacksStyle} src={stacks} alt="Tech Stack Icon" />
       <div style={yearsExperienceStyle}>{experience}</div>
     </main>
   );
@@ -61,7 +61,6 @@ const Resume = ({ title, company, experience, description, stacks }) => {
     <>
       <Grid container style={gridStyle}>
         <Grid item>
-
           <PositionTitle
             title={title}
             experience={experience}
