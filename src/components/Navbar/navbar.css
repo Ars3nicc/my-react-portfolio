@@ -38,6 +38,10 @@
     color: #3b3b3b;
 }
 
+.links ul li a.active {
+    border-bottom: 2px solid #387adf;
+  }
+
 @media screen and (max-width: 768px) {
     .title {
         margin-left: 0;

@@ -1,0 +1,32 @@
+.intro-project {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.project-header {
+  font-size: 4rem;
+  padding: 2vh;
+}
+.project-header-desc {
+  font-size: 19px;
+  line-height: 4vh;
+}
+.aboutme-icon {
+  transition: ease 0.1s;
+}
+.aboutme-icon:hover{
+    transform: scale(1.2);
+}
+
+.aboutme-icon:hover .github-icon {
+  color: #24292e; /* Change color to GitHub's color */
+}
+
+.aboutme-icon:hover .linkedin-icon {
+  color: #0077b5; /* Change color to LinkedIn's color */
+}
+
+.aboutme-icon:hover .resume-icon {
+  color: #969696; /* Change color to Resume's color */
+}

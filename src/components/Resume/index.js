@@ -20,6 +20,16 @@ const yearsExperienceStyle = {
   marginTop: "10px",
   fontWeight: "bold",
 };
+const headerStyle = {
+  fontSize: "1.3rem",
+  fontWeight: "bold",
+  marginTop: "15px",
+};
+const stacksStyle = {
+  width: "40px",
+  height: "auto",
+  padding: "10px",
+};
 const descStyle = {
   marginTop: "3vh",
   marginLeft: "3vw",
@@ -27,36 +37,37 @@ const descStyle = {
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   borderRadius: "16px",
   maxWidth: "1000px",
-
 };
+
 const listStyle = {
   fontSize: "17px",
   lineHeight: "5vh",
   textAlign: "justify",
-}
+};
 
 const PositionTitle = ({ title, company, experience, stacks }) => {
   return (
     <main>
       <header style={positionStyle}>{title}</header>
       <div style={companyStyle}>{company}</div>
-      <div>{stacks}</div>
+      <header style={headerStyle}>Tech Stacks Used:</header>
+       <img style={stacksStyle} src={stacks} alt="Tech Stack Icon" />
       <div style={yearsExperienceStyle}>{experience}</div>
     </main>
   );
 };
-
 const Resume = ({ title, company, experience, description, stacks }) => {
   return (
     <>
       <Grid container style={gridStyle}>
         <Grid item>
+
           <PositionTitle
             title={title}
             experience={experience}
             company={company}
+            stacks={stacks} // Pass the stacks prop
           />
-          <div>{stacks}</div>
           <Box style={descStyle}>
             <ul style={listStyle}>
               {description.map((desc, index) => (

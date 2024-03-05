@@ -9,8 +9,10 @@ import Grid from "@mui/material/Grid";
 import Container from "react-bootstrap/Container";
 
 const titleHeaderStyle = {
-  fontSize: "4.3rem",
+  fontSize: "3.6rem",
   fontWeight: "bold",
+  textAlign: "center",
+  paddingTop: "3vh"
 };
 const techHeaderStyle = {
   fontSize: "1.5rem",
@@ -24,7 +26,7 @@ const descriptionStyle = {
 const gridStyle = {
   display: "flex",
   justifyContent: "center",
-}
+};
 const TitleDesc = ({ description }) => {
   return (
     <main>
@@ -53,7 +55,7 @@ const TechStack = () => {
   return (
     <div>
       <Container fluid>
-        <TitleHeader title="Tech Stack" />
+        <TitleHeader title="Tech Stacks" />
 
         <Grid container spacing={5} style={gridStyle}>
           <Grid item>
@@ -78,7 +80,7 @@ const TechStack = () => {
           </Grid>
           <Grid item>
             <Box
-            height={400}
+              height={400}
               width={600}
               my={4}
               gap={4}
