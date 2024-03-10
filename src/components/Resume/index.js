@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 const gridStyle = {
-  width: "100%",
+  width: "70%",
   padding: "3vw",
 };
 const positionStyle = {
@@ -20,16 +20,16 @@ const yearsExperienceStyle = {
   marginTop: "10px",
   fontWeight: "bold",
 };
-const headerStyle = {
-  fontSize: "1.3rem",
-  fontWeight: "bold",
-  marginTop: "15px",
-};
-const stacksStyle = {
-  width: "40px",
-  height: "auto",
-  padding: "10px",
-};
+// const headerStyle = {
+//   fontSize: "1.3rem",
+//   fontWeight: "bold",
+//   marginTop: "15px",
+// };
+// const stacksStyle = {
+//   width: "40px",
+//   height: "auto",
+//   padding: "10px",
+// };
 const descStyle = {
   marginTop: "3vh",
   marginLeft: "3vw",
@@ -39,24 +39,24 @@ const descStyle = {
   maxWidth: "1000px",
 };
 
+
 const listStyle = {
-  fontSize: "17px",
+  fontSize: "15px",
   lineHeight: "5vh",
   textAlign: "justify",
+  margin: "15px"
 };
 
-const PositionTitle = ({ title, company, experience, stacks }) => {
+const PositionTitle = ({ title, company, experience, stack1, stack2 }) => {
   return (
     <main>
       <header style={positionStyle}>{title}</header>
       <div style={companyStyle}>{company}</div>
-      <header style={headerStyle}>Tech Stacks Used:</header>
-      <img style={stacksStyle} src={stacks} alt="Tech Stack Icon" />
       <div style={yearsExperienceStyle}>{experience}</div>
     </main>
   );
 };
-const Resume = ({ title, company, experience, description, stacks }) => {
+const Resume = ({ title, company, experience, description, stack1,stack2 }) => {
   return (
     <>
       <Grid container style={gridStyle}>
@@ -65,7 +65,6 @@ const Resume = ({ title, company, experience, description, stacks }) => {
             title={title}
             experience={experience}
             company={company}
-            stacks={stacks} // Pass the stacks prop
           />
           <Box style={descStyle}>
             <ul style={listStyle}>

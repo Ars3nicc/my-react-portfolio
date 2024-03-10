@@ -9,17 +9,21 @@ import Grid from "@mui/material/Grid";
 import Container from "react-bootstrap/Container";
 
 const titleHeaderStyle = {
-  fontSize: "3.6rem",
+  fontSize: "2rem",
   fontWeight: "bold",
   textAlign: "center",
   paddingTop: "3vh"
+};
+const TitlesubStyle = {
+  fontSize: "1.3",
+  textAlign: "center",
 };
 const techHeaderStyle = {
   fontSize: "1.5rem",
   fontWeight: "bold",
 };
 const descriptionStyle = {
-  fontSize: "14px",
+  fontSize: "13px",
   color: "#969696",
   marginBottom: "3vh",
 };
@@ -27,18 +31,23 @@ const gridStyle = {
   display: "flex",
   justifyContent: "center",
 };
-const TitleDesc = ({ description }) => {
+const gridItemStyle = {
+  backgroundColor: "#ffff"
+};
+const TitleDesc = ({ description, }) => {
   return (
     <main>
       <header style={descriptionStyle}>{description}</header>
+
     </main>
   );
 };
 
-const TitleHeader = ({ title }) => {
+const TitleHeader = ({ title,titleSub }) => {
   return (
     <main>
       <header style={titleHeaderStyle}>{title}</header>
+      <div style={TitlesubStyle}>{titleSub}</div>
     </main>
   );
 };
@@ -55,7 +64,10 @@ const TechStack = () => {
   return (
     <div>
       <Container fluid>
-        <TitleHeader title="Tech Stacks" />
+        <TitleHeader 
+        title="Tech Stacks" 
+        titleSub= "My collection of tools and frameworks used to develop fascinating software projects."
+        />
 
         <Grid container spacing={5} style={gridStyle}>
           <Grid item>
@@ -67,6 +79,7 @@ const TechStack = () => {
               p={2}
               borderRadius={2}
               sx={{ border: "2px solid #969696" }}
+              style={gridItemStyle}
             >
               <TechHeader title="Languages" />
               <TitleDesc description="Experienced tools" />
@@ -87,6 +100,7 @@ const TechStack = () => {
               p={2}
               borderRadius={2}
               sx={{ border: "2px solid #969696" }}
+              style={gridItemStyle}
             >
               <TechHeader title="Technologies" />
               <TitleDesc description="Experienced tools" />

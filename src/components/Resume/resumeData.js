@@ -23,7 +23,7 @@ const indexNumberStyle = {
 
 const resumeData = [
   {
-    title: "Computer Programmer",
+    title: "IT Consultant/Computer Programmer",
     experience: "August 2023 - Present",
     company: "Civil Aviation Authority of the Philippines",
     description: [
@@ -34,7 +34,7 @@ const resumeData = [
       "Implemented preventive maintenance procedures to minimize downtime and maximize the reliability of computer systems and equipment.",
       "Provided user training and support to enhance computer literacy and optimize the utilization of technology resources.",
     ],
-    stacks: [stackIcons.laravel, stackIcons.django] 
+    stack1: [stackIcons.laravel],
   },
   {
     title: "Associate Operations Manager",
@@ -46,11 +46,24 @@ const resumeData = [
       "Played a pivotal role in documenting the progression of development stages, ensuring comprehensive records and insights for ongoing projects.",
       "Contributed the system designs while maintaing 100% functionality of the system and remain aligned to the customer's requirements.",
       "Engaged proactively with cross-functional teams to streamline processes and foster a collaborative environment. Acted as a liaison between different departments, facilitating communication and coordination to drive projects forward effectively.",
-      "Contributed innovative ideas and solutions to address challenges and optimize workflows, supporting the overall growth and success of the organization. Leveraged creativity and critical thinking to propose enhancements and improvements across various aspects of the business.",
+      "Contributed innovative ideas and solutions to address challenges and optimize workflows, supporting the overall growth and success of the organization.",
+      "Leveraged creativity and critical thinking to propose enhancements and improvements across various aspects of the business.",
     ],
     
   },
-  // Add more resume data objects as needed
+  {
+    title: "IT Intern",
+    experience: "September 2022 - March 2023",
+    company: "Persons",
+    description: [
+      "Spearheaded with the innovation of anti-tampering systems for user credentials from the company services.",
+      "Assisted and cooperated with educational experience through temporarily providing teachings and trainings to aspiring ICT students.",
+      "Tasked as substitute IT consultant for clients while providing high-end solutions and recommendations for their outputs and projects.",
+      "Demonstrated proficiency in delivering cutting-edge technology solutions and recommendations.",
+    ],
+    
+  },
+  
 ];
 
 
@@ -66,7 +79,6 @@ const ResumeContainer = () => {
             experience={resume.experience}
             company={resume.company}
             description={resume.description}
-            stacks={resume.stacks} // Pass the tech stack icons
           />
         </div>
       ))}
