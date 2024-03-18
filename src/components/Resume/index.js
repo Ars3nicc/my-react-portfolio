@@ -42,7 +42,7 @@ const descStyle = {
 
 const listStyle = {
   fontSize: "15px",
-  lineHeight: "5vh",
+  lineHeight: "3vh",
   textAlign: "justify",
   margin: "15px"
 };

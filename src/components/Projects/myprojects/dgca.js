@@ -1,51 +1,58 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import HCPImg from "../../../assets/img/projects/sample.jpg";
 import laravelIcon from "../../../assets/img/tech-stack/frameworks/laravel.png";
-import reactIcon from "../../../assets/img/tech-stack/frameworks/react.png";
 import phpIcon from "../../../assets/img/tech-stack/languages/php.png";
+import typesciptIcon from "../../../assets/img/tech-stack/languages/typescript.png";
+import mysqlIcon from "../../../assets/img/tech-stack/database/mysql.svg";
 import githubIcon from "../../../assets/img/tech-stack/technology/github.svg";
 import bootstrapIcon from "../../../assets/img/tech-stack/technology/bootstrap.png";
-
+import "../myprojects/card.css";
 
 const iconImg = {
-  width: "30px",
+  width: "35px",
   height: "auto",
 };
 const gridContainerStyle = {
-    margin: "10px",
-    display: "block"
-  };
+  margin: "10px",
+  display: "block",
+};
 const gridStyle = {
   display: "flex",
   alignItems: "center",
   gap: "10px",
 };
 const toolHeaderStyle = {
-  fontWeight: "bold",
   fontSize: "16px",
+  marginTop: "25px",
 };
 
-export default function heightClearance() {
+export default function DGCA() {
   return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card
+      sx={{
+        width: 900,
+      }}
+      className="card-content"
+    >
       <CardMedia
         sx={{ height: 200 }}
         image={HCPImg}
-        title="59th DGCA Conference Website"
+        title="DGCA Conference Website"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        59th DGCA Conference Website
+        <Typography gutterBottom variant="h4" component="div">
+          DGCA Conference Website
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Streamlined document management website used by the international delegates for the conference event.
+        <Typography>
+          <b className="subheader">November 2023</b>
+        </Typography>
+        <Typography variant="body2" className="desc-body">
+        An online and strategic initiative aimed at optimising the digital infrastructure for the Directorate General of Civil Aviation (DGCA) Conference, exclusively serving nations within the Asia-Pacific Region (APAC). This web-based platform streamlines the submission of electronic files and programs, fostering seamless preparations ahead of the conference.
         </Typography>
         <Grid container style={gridContainerStyle}>
           <Grid item>
@@ -53,16 +60,27 @@ export default function heightClearance() {
           </Grid>
           <Grid item style={gridStyle}>
             <img src={laravelIcon} alt="Laravel Icon" style={iconImg} />
-            <img src={phpIcon} alt="Php Icon" style={iconImg} />
-            <img src={reactIcon} alt="React Icon" style={iconImg} />
-            <img src={githubIcon} alt="Github Icon" style={iconImg} />
+            <img src={phpIcon} alt="PHP Icon" style={iconImg} />
+            <img src={typesciptIcon} alt="TypeScript Icon" style={iconImg} />
             <img src={bootstrapIcon} alt="Bootstrap Icon" style={iconImg} />
+            <img src={mysqlIcon} alt="MySQL Icon" style={iconImg} />
+          </Grid>
+        </Grid>
+        <Grid container style={gridContainerStyle}>
+          <Grid item>
+            <header style={toolHeaderStyle}>Existing Links:</header>
+          </Grid>
+          <Grid item style={gridStyle}>
+            <a
+              rel="noreferrer"
+              href="https://github.com/CAAP-Information-System/dgca-laravel"
+              target="_blank"
+            >
+              <img src={githubIcon} alt="Github Icon" style={iconImg} />
+            </a>
           </Grid>
         </Grid>
       </CardContent>
-      <CardActions>
-        <Button variant="outlined">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }
