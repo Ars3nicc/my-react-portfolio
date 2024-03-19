@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import HCPImg from "../../../assets/img/projects/sample.jpg";
+import airportImg from "../../../assets/img/projects/airport-management.png";
 import djangoIcon from "../../../assets/img/tech-stack/frameworks/django.png";
 import pythonIcon from "../../../assets/img/tech-stack/languages/python.png";
 import postgresIcon from "../../../assets/img/tech-stack/database/postgresql.png";
@@ -34,14 +34,11 @@ const toolHeaderStyle = {
 export default function DGCA() {
   return (
     <Card
-      sx={{
-        width: 900,
-      }}
       className="card-content"
     >
       <CardMedia
-        sx={{ height: 200 }}
-        image={HCPImg}
+        sx={{ height: 300 }}
+        image={airportImg}
         title="Airport Project Management Website"
       />
       <CardContent>

@@ -2,6 +2,7 @@ import "./header.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
+import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
 
 const iconStyle = {
   fontSize: "3rem",
@@ -43,9 +44,11 @@ const Header = () => {
             <LinkedInIcon className="linkedin-icon" style={iconStyle} />
           </a>
           <a
-            href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
+            href={ManriqueCV}
             className="aboutme-icon"
             data-label="Resume"
+            target="_blank" // Open link in a new tab
+            rel="noopener noreferrer" // Add security-related attributes
           >
             <DescriptionIcon className="resume-icon" style={iconStyle} />
           </a>

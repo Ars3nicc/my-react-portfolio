@@ -1,11 +1,9 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 
-const gridStyle = {
-  width: "70%",
-  padding: "3vw",
-};
+import Grid from "@mui/material/Grid";
+import "../Resume/index.css";
+import { Card } from "@mui/material";
+
 const positionStyle = {
   fontSize: "25px",
   fontWeight: "bold",
@@ -30,14 +28,6 @@ const yearsExperienceStyle = {
 //   height: "auto",
 //   padding: "10px",
 // };
-const descStyle = {
-  marginTop: "3vh",
-  marginLeft: "3vw",
-  padding: "10px",
-  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-  borderRadius: "16px",
-  maxWidth: "1000px",
-};
 
 
 const listStyle = {
@@ -59,20 +49,20 @@ const PositionTitle = ({ title, company, experience, stack1, stack2 }) => {
 const Resume = ({ title, company, experience, description, stack1,stack2 }) => {
   return (
     <>
-      <Grid container style={gridStyle}>
+      <Grid container className="main-container">
         <Grid item>
           <PositionTitle
             title={title}
             experience={experience}
             company={company}
           />
-          <Box style={descStyle}>
+          <Card className="desc-card">
             <ul style={listStyle}>
               {description.map((desc, index) => (
                 <li key={index}>{desc}</li>
               ))}
             </ul>
-          </Box>
+          </Card>
         </Grid>
       </Grid>
     </>

@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import HCPImg from "../../../assets/img/projects/sample.jpg";
+import DGCAImg from "../../../assets/img/projects/dgca-banner.png";
 import laravelIcon from "../../../assets/img/tech-stack/frameworks/laravel.png";
 import phpIcon from "../../../assets/img/tech-stack/languages/php.png";
 import typesciptIcon from "../../../assets/img/tech-stack/languages/typescript.png";
@@ -34,14 +34,11 @@ const toolHeaderStyle = {
 export default function DGCA() {
   return (
     <Card
-      sx={{
-        width: 900,
-      }}
       className="card-content"
     >
       <CardMedia
-        sx={{ height: 200 }}
-        image={HCPImg}
+        sx={{ height: 300 }}
+        image={DGCAImg}
         title="DGCA Conference Website"
       />
       <CardContent>

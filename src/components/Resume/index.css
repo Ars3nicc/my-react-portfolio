@@ -1,0 +1,18 @@
+.main-container{
+    width: 70%;
+    padding: 3vh;
+}
+.desc-card{
+    margin-top: 3vh;
+    margin-left: 3vw;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
+    max-width: 900px;
+}
+
+@media screen and (max-width: 768px){
+    .main-container{
+        width: fit-content
+    }
+}

@@ -4,23 +4,26 @@ import DGCA from "./myprojects/dgca";
 import AirportProjectDB from "./myprojects/airportProjectsDB";
 import Certinize from "./myprojects/certinize";
 import { Grid } from "@mui/material";
+import "../Projects/main.css";
 
 const gridContainer = {
   display: "flex",
+  flexDirection: "column",
   justifyContent: "center",
-  padding: "20px",
+  alignItems: "center",
 };
+
 const titleHeaderStyle = {
   fontSize: "2rem",
   fontWeight: "bold",
   textAlign: "center",
-  paddingTop: "3vh"
+  paddingTop: "3vh",
 };
 const TitlesubStyle = {
   fontSize: "1.3",
   textAlign: "center",
 };
-const TitleHeader = ({ title,titleSub }) => {
+const TitleHeader = ({ title, titleSub }) => {
   return (
     <main>
       <header style={titleHeaderStyle}>{title}</header>
@@ -32,24 +35,25 @@ const TitleHeader = ({ title,titleSub }) => {
 const ProjectData = () => {
   return (
     <>
-        <TitleHeader 
-        title="My Projects" 
-        titleSub= "A collection of all my existing projects that I used through my software developer career."
-        />
-      <Grid container style={gridContainer} spacing={3}>
-        <Grid item>
-          <Certinize />
+      <TitleHeader
+        title="My Projects"
+        titleSub="A collection of all my existing projects that I used through my software developer career."
+      />
+      <br></br>
+        <Grid container style={gridContainer} spacing={8}>
+          <Grid item>
+            <Certinize />
+          </Grid>
+          <Grid item>
+            <HeightClearance />
+          </Grid>
+          <Grid item>
+            <DGCA />
+          </Grid>
+          <Grid item>
+            <AirportProjectDB />
+          </Grid>
         </Grid>
-        <Grid item>
-          <HeightClearance />
-        </Grid>
-        <Grid item>
-          <DGCA />
-        </Grid>
-        <Grid item>
-          <AirportProjectDB />
-        </Grid>
-      </Grid>
     </>
   );
 };

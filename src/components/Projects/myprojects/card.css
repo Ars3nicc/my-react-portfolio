@@ -1,5 +1,6 @@
 .card-content{
     color: #3b3b3b;
+    width: 900px;
 }
 .subheader{
     font-weight: bold;
@@ -9,4 +10,11 @@
 .desc-body{
     margin-top: 10px;
     font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .card-content{
+        display: block;
+        width: fit-content;
+    }
 }

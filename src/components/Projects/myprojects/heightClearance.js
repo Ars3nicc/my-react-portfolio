@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import HCPImg from "../../../assets/img/projects/sample.jpg";
+import HCPImg from "../../../assets/img/projects/height-clearance.png";
 import laravelIcon from "../../../assets/img/tech-stack/frameworks/laravel.png";
 import phpIcon from "../../../assets/img/tech-stack/languages/php.png";
 import typesciptIcon from "../../../assets/img/tech-stack/languages/typescript.png";
@@ -34,13 +34,10 @@ const toolHeaderStyle = {
 export default function Certinize() {
   return (
     <Card
-      sx={{
-        width: 900,
-      }}
       className="card-content"
     >
       <CardMedia
-        sx={{ height: 200 }}
+        sx={{ height: 300 }}
         image={HCPImg}
         title="Online Height Clearance"
       />

@@ -1,10 +1,9 @@
 import React from "react";
-import "./index.css";
+import "../TechStack/index.css";
 import { LangTools } from "./Stacks/LangTools.js";
 import { TechTools } from "./Stacks/TechTools.js";
 import { FrameworkTools } from "./Stacks/FrameworkTools.js";
 import { DatabaseTools } from "./Stacks/DatabaseTools.js";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "react-bootstrap/Container";
 
@@ -12,7 +11,7 @@ const titleHeaderStyle = {
   fontSize: "2rem",
   fontWeight: "bold",
   textAlign: "center",
-  paddingTop: "3vh"
+  paddingTop: "3vh",
 };
 const TitlesubStyle = {
   fontSize: "1.3",
@@ -27,23 +26,16 @@ const descriptionStyle = {
   color: "#969696",
   marginBottom: "3vh",
 };
-const gridStyle = {
-  display: "flex",
-  justifyContent: "center",
-};
-const gridItemStyle = {
-  backgroundColor: "#ffff"
-};
-const TitleDesc = ({ description, }) => {
+
+const TitleDesc = ({ description }) => {
   return (
     <main>
       <header style={descriptionStyle}>{description}</header>
-
     </main>
   );
 };
 
-const TitleHeader = ({ title,titleSub }) => {
+const TitleHeader = ({ title, titleSub }) => {
   return (
     <main>
       <header style={titleHeaderStyle}>{title}</header>
@@ -64,23 +56,14 @@ const TechStack = () => {
   return (
     <div>
       <Container fluid>
-        <TitleHeader 
-        title="Tech Stacks" 
-        titleSub= "My collection of tools and frameworks used to develop fascinating software projects."
+        <TitleHeader
+          title="Tech Stacks"
+          titleSub="My collection of tools and frameworks used to develop fascinating software projects."
         />
 
-        <Grid container spacing={5} style={gridStyle}>
+        <Grid container spacing={5} className="gridStyle">
           <Grid item>
-            <Box
-              height={400}
-              width={600}
-              my={4}
-              gap={4}
-              p={2}
-              borderRadius={2}
-              sx={{ border: "2px solid #969696" }}
-              style={gridItemStyle}
-            >
+            <Container className="gridItems">
               <TechHeader title="Languages" />
               <TitleDesc description="Experienced tools" />
               <LangTools />
@@ -89,19 +72,10 @@ const TechStack = () => {
               <TechHeader title="Frameworks" />
               <TitleDesc description="Experienced tools" />
               <FrameworkTools />
-            </Box>
+            </Container>
           </Grid>
           <Grid item>
-            <Box
-              height={400}
-              width={600}
-              my={4}
-              gap={4}
-              p={2}
-              borderRadius={2}
-              sx={{ border: "2px solid #969696" }}
-              style={gridItemStyle}
-            >
+            <Container className="gridItems">
               <TechHeader title="Technologies" />
               <TitleDesc description="Experienced tools" />
               <TechTools />
@@ -110,7 +84,7 @@ const TechStack = () => {
               <TechHeader title="Databases" />
               <TitleDesc description="Experienced tools" />
               <DatabaseTools />
-            </Box>
+            </Container>
           </Grid>
         </Grid>
       </Container>

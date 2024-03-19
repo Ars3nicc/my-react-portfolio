@@ -5,6 +5,7 @@ import avatarImage from "../../assets/img/my-avatar.png";
 import Container from "react-bootstrap/Container";
 import ResumeContainer from "../Resume/resumeData"; 
 
+
 export const AboutMe = () => {
   useEffect(() => {
     const typed = new Typed(".input", {

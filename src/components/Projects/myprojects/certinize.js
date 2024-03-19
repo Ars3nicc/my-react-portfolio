@@ -33,13 +33,10 @@ const toolHeaderStyle = {
 export default function Certinize() {
   return (
     <Card
-      sx={{
-        width: 900, 
-      }}
       className="card-content"
     >
       <CardMedia
-        sx={{ height: 200 }}
+        sx={{ height: 300 }}
         image={CertinizeImg}
         title="Certinize: Blockchain-enabled Verification System"
       />
