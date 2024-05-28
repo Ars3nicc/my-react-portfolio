@@ -13,21 +13,10 @@ const gridContainer = {
   alignItems: "center",
 };
 
-const titleHeaderStyle = {
-  fontSize: "2rem",
-  fontWeight: "bold",
-  textAlign: "center",
-  paddingTop: "3vh",
-};
-const TitlesubStyle = {
-  fontSize: "1.3",
-  textAlign: "center",
-};
 const TitleHeader = ({ title, titleSub }) => {
   return (
-    <main>
-      <header style={titleHeaderStyle}>{title}</header>
-      <div style={TitlesubStyle}>{titleSub}</div>
+    <main className="py-24">
+      <header className="m-5  uppercase text-7xl font-bold text-center">{title}</header>
     </main>
   );
 };
@@ -37,7 +26,7 @@ const ProjectData = () => {
     <>
       <TitleHeader
         title="My Projects"
-        titleSub="A collection of all my existing projects that I used through my software developer career."
+        // titleSub="A collection of all my existing projects that I used through my software developer career."
       />
       <br></br>
         <Grid container style={gridContainer} spacing={8}>
