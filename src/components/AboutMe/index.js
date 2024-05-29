@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import "./about-me.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
+import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
 import avatarImage from "../../assets/img/my-avatar.png";
 import Container from "react-bootstrap/Container";
 import ResumeContainer from "../Resume/resumeData";
@@ -39,6 +43,32 @@ export const AboutMe = () => {
               me to excel in both technical and non-technical roles within the
               profession.
             </header>
+            <div className="mt-4 flex justify-center md:justify-start">
+              <a
+                href="https://www.linkedin.com/in/franz-ronin-manrique-4b7612242/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+              >
+                <LinkedInIcon style={{ fontSize: 50 }} />
+              </a>
+              <a
+                href="https://github.com/Ars3nicc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+              >
+                <GitHubIcon style={{ fontSize: 50 }} />
+              </a>
+              <a
+                href="https://www.canva.com/design/DAFtSkW0F5c/1JwldvS4uv9Qikbt2A8oJg/edit?utm_content=DAFtSkW0F5c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+              >
+                <DescriptionIcon style={{ fontSize: 50 }} />
+              </a>
+            </div>
           </div>
           <div className="about-me-img mt-8 md:mt-0">
             <img

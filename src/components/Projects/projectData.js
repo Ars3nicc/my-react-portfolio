@@ -6,12 +6,7 @@ import Certinize from "./myprojects/certinize";
 import { Grid } from "@mui/material";
 import "../Projects/main.css";
 
-const gridContainer = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-};
+
 
 const TitleHeader = ({ title, titleSub }) => {
   return (
@@ -29,7 +24,7 @@ const ProjectData = () => {
         // titleSub="A collection of all my existing projects that I used through my software developer career."
       />
       <br></br>
-        <Grid container style={gridContainer} spacing={8}>
+        <Grid container spacing={8}>
           <Grid item>
             <Certinize />
           </Grid>
