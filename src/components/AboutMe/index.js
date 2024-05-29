@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import "./about-me.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 // import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
 import avatarImage from "../../assets/img/my-avatar.png";
 
@@ -50,6 +50,7 @@ export const AboutMe = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+                title="LinkedIn"
               >
                 <LinkedInIcon style={{ fontSize: 50 }} />
               </a>
@@ -58,6 +59,7 @@ export const AboutMe = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+                title="GitHub"
               >
                 <GitHubIcon style={{ fontSize: 50 }} />
               </a>
@@ -66,8 +68,9 @@ export const AboutMe = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mx-2 transform transition duration-500 ease-in-out hover:scale-125 hover:text-gray-500"
+                title="Resume"
               >
-                <DescriptionIcon style={{ fontSize: 50 }} />
+                <AssignmentIndIcon style={{ fontSize: 50 }} />
               </a>
             </div>
           </div>

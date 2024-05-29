@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../TechStack/index.css";
 import { LangTools } from "./Stacks/LangTools.js";
 import { TechTools } from "./Stacks/TechTools.js";
@@ -6,6 +6,19 @@ import { FrameworkTools } from "./Stacks/FrameworkTools.js";
 import { DatabaseTools } from "./Stacks/DatabaseTools.js";
 import Grid from "@mui/material/Grid";
 import Container from "react-bootstrap/Container";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const withAOS = (Component) => (props) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
+  return <Component {...props} />;
+};
+
 
 const TitleHeader = ({ title, titleSub }) => {
   return (
@@ -33,7 +46,7 @@ const TitleDesc = ({ description }) => {
 
 const TechStack = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 animate-fade-up animate-delay-0" data-aos="fade-up">
       <Container fluid>
         <div className="md:flex md:justify-center gap-24 items-center">
           <TitleHeader
@@ -85,4 +98,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default withAOS(TechStack);

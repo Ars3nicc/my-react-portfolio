@@ -1,22 +1,7 @@
 import React from "react";
 import Resume from "./index"; // Import your Resume component
-import laravel from "../../assets/img/tech-stack/frameworks/laravel.png";
-import django from "../../assets/img/tech-stack/frameworks/django.png";
-import react from "../../assets/img/tech-stack/frameworks/react.png";
-import php from "../../assets/img/tech-stack/languages/php.png";
-import python from "../../assets/img/tech-stack/languages/python.png";
-import tailwind from "../../assets/img/tech-stack/languages/tailwind.png";
-import javascript from "../../assets/img/tech-stack/languages/javascript.png";
-import mysql from "../../assets/img/tech-stack/database/mysql.svg";
-import postgresql from "../../assets/img/tech-stack/database/postgresql.png";
-import git from "../../assets/img/tech-stack/technology/git.png";
-import jquery from "../../assets/img/tech-stack/technology/jquery.png";
-import mui from "../../assets/img/tech-stack/technology/mui.svg";
-import nodejs from "../../assets/img/tech-stack/technology/node.png";
-import trello from "../../assets/img/tech-stack/technology/trello.png";
-import postman from "../../assets/img/tech-stack/technology/postman.jpg";
-import figma from "../../assets/img/tech-stack/technology/figma.png";
-import bootstrap from "../../assets/img/tech-stack/technology/bootstrap.png";
+import { techStackImages } from '../techstackImages';
+
 
 const indexGrpStyle = {
   display: "flex",
@@ -38,42 +23,42 @@ const resumeData = [
       "Applied front-end tasks to deliver the most interactive design for the project stakeholders and clients.",
       "Spearheaded the design of intuitive system interfaces, enhancing user experience and facilitating seamless interactions with applications.",
     ],
-    stacks: [
-      <div className="flex gap-2">
-        <img
-          src={laravel}
-          alt="Laravel"
-          style={{ width: "30px", height: "30px" }}
-        />
-        <img src={php} alt="PHP" style={{ width: "50px", height: "30px" }} />
-        <img
-          src={python}
-          alt="Python"
-          style={{ width: "30px", height: "auto" }}
-        />
-        <img
-          src={javascript}
-          alt="Javascript"
-          style={{ width: "30px", height: "30px" }}
-        />
-        <img
-          src={mui}
-          alt="Material UI"
-          style={{ width: "30px", height: "30px" }}
-        />
-        <img
-          src={tailwind}
-          alt="Tailwind"
-          style={{ width: "50px", height: "auto" }}
-        />
-        <img
-          src={mysql}
-          alt="MySQL"
-          style={{ width: "50px", height: "auto" }}
-        />
-        <img src={git} alt="Git" style={{ width: "35px", height: "auto" }} />
-      </div>,
-    ],
+stacks: [
+  <div className="flex gap-2">
+    <img
+      src={techStackImages.laravel}
+      alt="Laravel"
+      style={{ width: "30px", height: "30px" }}
+    />
+    <img src={techStackImages.php} alt="PHP" style={{ width: "50px", height: "30px" }} />
+    <img
+      src={techStackImages.python}
+      alt="Python"
+      style={{ width: "30px", height: "auto" }}
+    />
+    <img
+      src={techStackImages.javascript}
+      alt="Javascript"
+      style={{ width: "30px", height: "30px" }}
+    />
+    <img
+      src={techStackImages.mui}
+      alt="Material UI"
+      style={{ width: "30px", height: "30px" }}
+    />
+    <img
+      src={techStackImages.tailwind}
+      alt="Tailwind"
+      style={{ width: "50px", height: "auto" }}
+    />
+    <img
+      src={techStackImages.mysql}
+      alt="MySQL"
+      style={{ width: "50px", height: "auto" }}
+    />
+    <img src={techStackImages.git} alt="Git" style={{ width: "35px", height: "auto" }} />
+  </div>,
+],
   },
   {
     title: "Computer Programmer",
@@ -92,39 +77,39 @@ const resumeData = [
     stacks: [
       <div className="flex gap-2">
         <img
-          src={django}
+          src={techStackImages.django}
           alt="Django"
           style={{ width: "30px", height: "30px" }}
         />
         <img
-          src={react}
+          src={techStackImages.react}
           alt="React"
           style={{ width: "30px", height: "30px" }}
         />
-        <img src={php} alt="PHP" style={{ width: "50px", height: "30px" }} />
+        <img src={techStackImages.php} alt="PHP" style={{ width: "50px", height: "30px" }} />
         <img
-          src={python}
+          src={techStackImages.python}
           alt="Python"
           style={{ width: "30px", height: "auto" }}
         />
         <img
-          src={javascript}
+          src={techStackImages.javascript}
           alt="Javascript"
           style={{ width: "30px", height: "30px" }}
         />
         <img
-          src={nodejs}
+          src={techStackImages.nodejs}
           alt="Node.JS"
           style={{ width: "30px", height: "auto" }}
         />
         <img
-          src={postgresql}
+          src={techStackImages.postgresql}
           alt="PostgreSQL"
           style={{ width: "30px", height: "auto" }}
         />
-        <img src={git} alt="Git" style={{ width: "35px", height: "auto" }} />
+        <img src={techStackImages.git} alt="Git" style={{ width: "35px", height: "auto" }} />
         <img
-          src={bootstrap}
+          src={techStackImages.bootstrap}
           alt="Bootstrap"
           style={{ width: "30px", height: "30px" }}
         />
@@ -149,23 +134,23 @@ const resumeData = [
     stacks: [
       <div className="flex gap-2">
         <img
-          src={trello}
+          src={techStackImages.trello}
           alt="Trello"
           style={{ width: "30px", height: "30px" }}
         />
-        <img src={git} alt="Git" style={{ width: "30px", height: "30px" }} />
+        <img src={techStackImages.git} alt="Git" style={{ width: "30px", height: "30px" }} />
         <img
-          src={jquery}
+          src={techStackImages.jquery}
           alt="JQuery"
           style={{ width: "30px", height: "30px" }}
         />
         <img
-          src={figma}
+          src={techStackImages.figma}
           alt="Figma"
           style={{ width: "30px", height: "35px" }}
         />
         <img
-          src={postman}
+          src={techStackImages.postman}
           alt="Postman"
           style={{ width: "30px", height: "30px" }}
         />
@@ -191,18 +176,18 @@ const resumeData = [
     stacks: [
       <div className="flex gap-2">
         <img
-          src={trello}
+          src={techStackImages.trello}
           alt="Trello"
           style={{ width: "30px", height: "30px" }}
         />
-        <img src={git} alt="Git" style={{ width: "30px", height: "30px" }} />
+        <img src={techStackImages.git} alt="Git" style={{ width: "30px", height: "30px" }} />
         <img
-          src={figma}
+          src={techStackImages.figma}
           alt="Figma"
           style={{ width: "30px", height: "35px" }}
         />
         <img
-          src={postman}
+          src={techStackImages.postman}
           alt="Postman"
           style={{ width: "30px", height: "30px" }}
         />
