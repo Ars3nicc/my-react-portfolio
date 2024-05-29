@@ -1,13 +1,27 @@
 import React from "react";
 import Resume from "./index"; // Import your Resume component
-import { stackIcons } from "./stackIcons"; // Import stackIcons
-
-
+import laravel from "../../assets/img/tech-stack/frameworks/laravel.png";
+import django from "../../assets/img/tech-stack/frameworks/django.png";
+import react from "../../assets/img/tech-stack/frameworks/react.png";
+import php from "../../assets/img/tech-stack/languages/php.png";
+import python from "../../assets/img/tech-stack/languages/python.png";
+import tailwind from "../../assets/img/tech-stack/languages/tailwind.png";
+import javascript from "../../assets/img/tech-stack/languages/javascript.png";
+import mysql from "../../assets/img/tech-stack/database/mysql.svg";
+import postgresql from "../../assets/img/tech-stack/database/postgresql.png";
+import git from "../../assets/img/tech-stack/technology/git.png";
+import jquery from "../../assets/img/tech-stack/technology/jquery.png";
+import mui from "../../assets/img/tech-stack/technology/mui.svg";
+import nodejs from "../../assets/img/tech-stack/technology/node.png";
+import trello from "../../assets/img/tech-stack/technology/trello.png";
+import postman from "../../assets/img/tech-stack/technology/postman.jpg";
+import figma from "../../assets/img/tech-stack/technology/figma.png";
+import bootstrap from "../../assets/img/tech-stack/technology/bootstrap.png";
 
 const indexGrpStyle = {
-    display: 'flex',
-    marginLeft: "2vw",
-}
+  display: "flex",
+  marginLeft: "2vw",
+};
 
 const resumeData = [
   {
@@ -24,7 +38,42 @@ const resumeData = [
       "Applied front-end tasks to deliver the most interactive design for the project stakeholders and clients.",
       "Spearheaded the design of intuitive system interfaces, enhancing user experience and facilitating seamless interactions with applications.",
     ],
-    stack1: [stackIcons.laravel],
+    stacks: [
+      <div className="flex gap-2">
+        <img
+          src={laravel}
+          alt="Laravel"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img src={php} alt="PHP" style={{ width: "50px", height: "30px" }} />
+        <img
+          src={python}
+          alt="Python"
+          style={{ width: "30px", height: "auto" }}
+        />
+        <img
+          src={javascript}
+          alt="Javascript"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img
+          src={mui}
+          alt="Material UI"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img
+          src={tailwind}
+          alt="Tailwind"
+          style={{ width: "50px", height: "auto" }}
+        />
+        <img
+          src={mysql}
+          alt="MySQL"
+          style={{ width: "50px", height: "auto" }}
+        />
+        <img src={git} alt="Git" style={{ width: "35px", height: "auto" }} />
+      </div>,
+    ],
   },
   {
     title: "Computer Programmer",
@@ -38,9 +87,49 @@ const resumeData = [
       "Played a key role in the development and implementation of a comprehensive testing strategy, using Python to automate tests and ensure software quality.",
       "Utilized PHP to create and implement innovative front-end solutions, contributing to the development of highly interactive and user-friendly applications.",
       "Spearheaded a team initiative to integrate Python scripts into the system, resulting in improved efficiency and automation of key processes.",
-      "Championed the use of Python and PHP in the development of cutting-edge solutions, contributing to the company's digital transformation journey."
+      "Championed the use of Python and PHP in the development of cutting-edge solutions, contributing to the company's digital transformation journey.",
     ],
-    stack1: [stackIcons.laravel],
+    stacks: [
+      <div className="flex gap-2">
+        <img
+          src={django}
+          alt="Django"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img
+          src={react}
+          alt="React"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img src={php} alt="PHP" style={{ width: "50px", height: "30px" }} />
+        <img
+          src={python}
+          alt="Python"
+          style={{ width: "30px", height: "auto" }}
+        />
+        <img
+          src={javascript}
+          alt="Javascript"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img
+          src={nodejs}
+          alt="Node.JS"
+          style={{ width: "30px", height: "auto" }}
+        />
+        <img
+          src={postgresql}
+          alt="PostgreSQL"
+          style={{ width: "30px", height: "auto" }}
+        />
+        <img src={git} alt="Git" style={{ width: "35px", height: "auto" }} />
+        <img
+          src={bootstrap}
+          alt="Bootstrap"
+          style={{ width: "30px", height: "30px" }}
+        />
+      </div>,
+    ],
   },
   {
     title: "Junior Operations Manager",
@@ -57,14 +146,38 @@ const resumeData = [
       "Applied operations assistance and technical support by use of ticketing system.",
       "Contributed to web development tasks especially in frontend using React technologies to a more interactive design.",
     ],
-    
+    stacks: [
+      <div className="flex gap-2">
+        <img
+          src={trello}
+          alt="Trello"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img src={git} alt="Git" style={{ width: "30px", height: "30px" }} />
+        <img
+          src={jquery}
+          alt="JQuery"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img
+          src={figma}
+          alt="Figma"
+          style={{ width: "30px", height: "35px" }}
+        />
+        <img
+          src={postman}
+          alt="Postman"
+          style={{ width: "30px", height: "30px" }}
+        />
+      </div>,
+    ],
   },
   {
     title: "IT Intern",
     experience: "August 2022 - January 2023",
     company: "Persons",
     description: [
-      "Spearheaded the innovation of anti-tampering systems, significantly enhancing the security of user credentials across all company services.",
+      "Contributed with the improvements for anti-tampering systems, significantly enhancing the security of user credentials across all company services.",
       "Collaborated with educational institutions, providing temporary instruction and training to aspiring ICT students, fostering the next generation of tech professionals.",
       "Served as a substitute IT consultant for clients, delivering high-end, tailored solutions and recommendations that drove their projects to success.",
       "Demonstrated proficiency in delivering cutting-edge technology solutions, staying ahead of industry trends and consistently pushing the boundaries of innovation.",
@@ -72,14 +185,31 @@ const resumeData = [
       "Implemented robust cybersecurity measures, protecting company data and instilling customer trust.",
       "Played a key role in the digital transformation initiatives of the company, modernizing legacy systems and processes.",
       "Managed IT infrastructure, ensuring high availability and minimal downtime, leading to increased productivity across the organization.",
-      "Championed the adoption of cloud technologies, resulting in cost savings and improved scalability for the company.",
-      "Continually updated technical knowledge and skills, demonstrating a commitment to professional growth and mastery in the field of IT."
+      "Excelled in adapting loud technologies, resulting in cost savings and improved scalability for the company.",
+      "Continually updated technical knowledge and skills, demonstrating a commitment to professional growth and mastery in the field of IT.",
     ],
-    
+    stacks: [
+      <div className="flex gap-2">
+        <img
+          src={trello}
+          alt="Trello"
+          style={{ width: "30px", height: "30px" }}
+        />
+        <img src={git} alt="Git" style={{ width: "30px", height: "30px" }} />
+        <img
+          src={figma}
+          alt="Figma"
+          style={{ width: "30px", height: "35px" }}
+        />
+        <img
+          src={postman}
+          alt="Postman"
+          style={{ width: "30px", height: "30px" }}
+        />
+      </div>,
+    ],
   },
-  
 ];
-
 
 const ResumeContainer = () => {
   return (
@@ -93,10 +223,10 @@ const ResumeContainer = () => {
             experience={resume.experience}
             company={resume.company}
             description={resume.description}
+            stacks={resume.stacks}
           />
         </div>
       ))}
-      
     </>
   );
 };

@@ -6,8 +6,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
 import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
 import avatarImage from "../../assets/img/my-avatar.png";
-import Container from "react-bootstrap/Container";
+
 import ResumeContainer from "../Resume/resumeData";
+import Header from "../Header/index";
 
 export const AboutMe = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ export const AboutMe = () => {
   }, []);
 
   return (
-    <Container>
+    <>
       <>
         <section className="mt-8 md:mt-32 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center animate-fade-up animate-ease-out">
           <div className="w-full md:w-1/2 text-center md:text-left">
@@ -74,14 +75,18 @@ export const AboutMe = () => {
             <img
               src={avatarImage}
               alt="My Profile"
-              className="my-profile-img mx-auto md:mx-0"
+              className="w-64 md:w-96 rounded-full mx-auto md:mx-0"
             />
           </div>
         </section>
-        <section className="md:mt-24 md:ml-16">
+        <section className="md:mt-24">
+          <Header title="Work Experience" />
+        </section>
+
+        <section className="md:mt-9 md:ml-16">
           <ResumeContainer />
         </section>
       </>
-    </Container>
+    </>
   );
 };
