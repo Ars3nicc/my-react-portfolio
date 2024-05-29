@@ -133,7 +133,7 @@ const resumeData = [
   },
   {
     title: "Junior Operations Manager",
-    experience: "June 2023 - September 2023",
+    experience: "June 2022 - January 2023",
     company: "Centrive Technologies",
     description: [
       "Successfully managed and streamlined backlogs of IT projects and proposals, contributing to improved project timelines and operational efficiency.",
@@ -174,7 +174,7 @@ const resumeData = [
   },
   {
     title: "IT Intern",
-    experience: "August 2022 - January 2023",
+    experience: "March 2022 - June 2023",
     company: "Persons",
     description: [
       "Contributed with the improvements for anti-tampering systems, significantly enhancing the security of user credentials across all company services.",

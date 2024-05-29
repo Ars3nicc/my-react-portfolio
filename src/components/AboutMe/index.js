@@ -4,7 +4,7 @@ import "./about-me.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DescriptionIcon from "@mui/icons-material/Description";
-import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
+// import ManriqueCV from "../../assets/document/Manrique_CV.pdf";
 import avatarImage from "../../assets/img/my-avatar.png";
 
 import ResumeContainer from "../Resume/resumeData";
