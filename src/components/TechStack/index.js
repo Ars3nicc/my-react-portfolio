@@ -9,9 +9,9 @@ import Container from "react-bootstrap/Container";
 
 const TitleHeader = ({ title, titleSub }) => {
   return (
-    <main>
+    <main className="text-center md:text-justify">
       <header className="text-5xl">{title}</header>
-      <div className="py-5 text-lg w-96">{titleSub}</div>
+      <div className="py-5 text-lg md:w-96">{titleSub}</div>
     </main>
   );
 };
@@ -35,7 +35,7 @@ const TechStack = () => {
   return (
     <div className="py-16">
       <Container fluid>
-        <div className="flex justify-center gap-24 items-center">
+        <div className="md:flex md:justify-center gap-24 items-center">
           <TitleHeader
             title="My Toolbox"
             titleSub="I am currently advancing my career in software engineering. I hold a degree in BS Information Technology and am actively engaged in various fields within the IT industry."
@@ -51,7 +51,7 @@ const TechStack = () => {
                 borderRadius: "12px",
               }}
             >
-              <div className="md:mr-16">
+              <Grid item xs={12} sm={6} className="md:mr-16">
                 <div className="py-5">
                   <TechHeader title="Languages" />
                   <TitleDesc description="Experienced tools" />
@@ -62,8 +62,8 @@ const TechStack = () => {
                   <TitleDesc description="Experienced tools" />
                 </div>
                 <FrameworkTools />
-              </div>
-              <div>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <div className="py-5">
                   <TechHeader title="Technologies" />
                   <TitleDesc description="Experienced tools" />
@@ -76,7 +76,7 @@ const TechStack = () => {
                   <TitleDesc description="Experienced tools" />
                 </div>
                 <DatabaseTools />
-              </div>
+              </Grid>
             </Grid>
           </main>
         </div>
