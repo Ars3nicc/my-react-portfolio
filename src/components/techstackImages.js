@@ -17,6 +17,7 @@ import trello from "../assets/img/tech-stack/technology/trello.png";
 import postman from "../assets/img/tech-stack/technology/postman.jpg";
 import figma from "../assets/img/tech-stack/technology/figma.png";
 import bootstrap from "../assets/img/tech-stack/technology/bootstrap.png";
+import json from "../assets/img/tech-stack/technology/json.png";
 
 export const techStackImages = {
   laravel,
@@ -36,4 +37,5 @@ export const techStackImages = {
   postman,
   figma,
   bootstrap,
+  json,
 };

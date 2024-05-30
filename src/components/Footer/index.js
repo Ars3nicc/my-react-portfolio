@@ -27,6 +27,11 @@ const Footer = () => {
                 IT Professional | Specializing in Software Development, IT
                 Solutions Consultant
               </p>
+              <p className="py-4">
+                franzmanrique2121@gmail.com
+                <br />
+                (+63) 916 630 2417
+              </p>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -72,7 +77,6 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const withAOS = (Component) => (props) => {
 
 const TitleHeader = ({ title, titleSub }) => {
   return (
-    <main className="text-center md:text-justify">
+    <main className="text-center md:text-left">
       <header className="text-5xl">{title}</header>
       <div className="py-5 text-lg md:w-96">{titleSub}</div>
     </main>
@@ -46,12 +46,12 @@ const TitleDesc = ({ description }) => {
 
 const TechStack = () => {
   return (
-    <div className="py-16 animate-fade-up animate-delay-0" data-aos="fade-up">
+    <div className="p-10 my-16 animate-fade-up animate-delay-0" data-aos="fade-up">
       <Container fluid>
         <div className="md:flex md:justify-center gap-24 items-center">
           <TitleHeader
             title="My Toolbox"
-            titleSub="I am currently advancing my career in software engineering. I hold a degree in BS Information Technology and am actively engaged in various fields within the IT industry."
+            titleSub="I am currently advancing my career in software engineering with a degree in BS Information Technology. These technologies and tools became my foundation of becoming a significant contributor in the IT industry."
           />
 
           <main className="">
