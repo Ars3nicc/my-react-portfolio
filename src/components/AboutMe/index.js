@@ -32,7 +32,7 @@ export const AboutMe = () => {
   return (
     <>
       <>
-        <main className="mt-8 md:mt-32 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center animate-fade-up animate-ease-out">
+        <main className="p-7 mt-8 md:mt-32 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center animate-fade-up animate-ease-out">
           <section className="w-full md:w-1/2 text-center md:text-left">
             {/* About Me Section */}
             <header className="text-2xl md:text-3xl lg:text-4xl">
